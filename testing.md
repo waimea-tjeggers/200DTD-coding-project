@@ -8,14 +8,14 @@ BRIEF DESCRIPTION OF GAME HERE
 BRIEF DESCRIPTION OF GAME HERE
 BRIEF DESCRIPTION OF GAME HERE
 
-### Game Rules
+### Game Features and Rules
 
-The game is played between two players following these rules:
+The game is played between two players, and has these features / follows these rules:
 
-- GAME RULE
-- GAME RULE
-- GAME RULE
-- GAME RULE
+- GAME FEATURE / RULE
+- GAME FEATURE / RULE
+- GAME FEATURE / RULE
+- GAME FEATURE / RULE
 
 
 ## Test Plan
