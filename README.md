@@ -31,7 +31,7 @@ Evidence of testing can be found in [testing.md](testing.md)
 You can either clone this whole repo, open it using [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) and run from source; or you can run the compiled program:
 
 1. Install the [Java runtime (JRE)](https://www.java.com/en/download/) installed to run the program.
-2. In a terminal, go to the [out/artifacts/](out/artifacts/) folder
+2. In a terminal, go to the [out/artifacts](out/artifacts) folder
 3. Locate the compiled **JAR file** (e.g. FILENAME.jar)
 4. Run the following command:
     ```bash
