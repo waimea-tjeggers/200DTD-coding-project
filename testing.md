@@ -8,15 +8,16 @@ BRIEF DESCRIPTION OF GAME HERE
 BRIEF DESCRIPTION OF GAME HERE
 BRIEF DESCRIPTION OF GAME HERE
 
-### Game Rules
+### Game Features and Rules
 
-The game is played between two players following these rules:
+The game has the following features and/or rules:
 
-- GAME RULE
-- GAME RULE
-- GAME RULE
-- GAME RULE
+- GAME FEATURE / RULE
+- GAME FEATURE / RULE
+- GAME FEATURE / RULE
+- GAME FEATURE / RULE
 
+---
 
 ## Test Plan
 
@@ -28,6 +29,90 @@ The following game features / functionality and player actions will need to be t
 - FUNCTIONALITY / FEATURE / ACTION TO TEST
 - FUNCTIONALITY / FEATURE / ACTION TO TEST
 
+The following tests will be run against the completed game. The tests should result in the expected outcomes shown.
+
+
+### TEST NAME HERE
+
+TEST DESCRIPTION HERE
+
+#### Test Data / Actions to Use
+
+TEST DATA TO USE DETAILED HERE
+
+#### Expected Outcome
+
+EXPECTED OUTCOME DETAILED HERE
+
+
+### TEST NAME HERE
+
+TEST DESCRIPTION HERE
+
+#### Test Data / Actions to Use
+
+TEST DATA TO USE DETAILED HERE
+
+#### Expected Outcome
+
+EXPECTED OUTCOME DETAILED HERE
+
+
+### TEST NAME HERE
+
+TEST DESCRIPTION HERE
+
+#### Test Data / Actions to Use
+
+TEST DATA TO USE DETAILED HERE
+
+#### Expected Outcome
+
+EXPECTED OUTCOME DETAILED HERE
+
+
+### TEST NAME HERE
+
+TEST DESCRIPTION HERE
+
+#### Test Data / Actions to Use
+
+TEST DATA TO USE DETAILED HERE
+
+#### Expected Outcome
+
+EXPECTED OUTCOME DETAILED HERE
+
+
+---
+
 
 ## Evidence / Results of Testing
+
+### TEST NAME HERE
+
+ACTUAL RESULTS OF TESTING SHOWN HERE
+
+NOTES REGARDING THE RESULTS HERE
+
+
+### TEST NAME HERE
+
+ACTUAL RESULTS OF TESTING SHOWN HERE
+
+NOTES REGARDING THE RESULTS HERE
+
+
+### TEST NAME HERE
+
+ACTUAL RESULTS OF TESTING SHOWN HERE
+
+NOTES REGARDING THE RESULTS HERE
+
+
+### TEST NAME HERE
+
+ACTUAL RESULTS OF TESTING SHOWN HERE
+
+NOTES REGARDING THE RESULTS HERE
 
