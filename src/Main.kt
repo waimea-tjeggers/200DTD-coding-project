@@ -14,7 +14,7 @@
 /**
  * basics
  * Set up board ✔
- * get player names
+ * get player names ✔
  * randomise pieces
  * differentiate between normal and gold coins
  * set up piece movement
@@ -32,31 +32,35 @@
  */
 fun main() {
     val boardsize = mutableListOf <String> ()
+repeat(times = 15){
+    boardsize.add(" ")
+}
 
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
-    boardsize.add(" ")
+
+
+
+    /**
+     * getting player names
+     */
+    println("now who's playing today")
+    val playerOne = readln()
+    println("and who is the opponent today")
+    val playerTwo = readln()
+
 
 
     showIntro()
     BoardSetUp(boardsize)
+    StartTurnRotation(boardsize,playerOne,playerTwo)
 
 }
 
 
 fun showIntro() {
+
+    /**
+     * explaining the rules of the game
+     */
     println("welcome to Old Gold")
     println("the rules of this game are pretty simple")
     println("you can only move the coins to the left, once they're at the end of the line you may take it")
@@ -64,13 +68,16 @@ fun showIntro() {
     println("you cannot move and remove a coin in the same turn")
     println("you may not move a coin through another coin")
 
-    println("now who's playing today")
 
-    
+
 }
 
 
 fun BoardSetUp(boardsize:MutableList<String>) {
+    /**
+     * setting up board
+     */
+
     print("┌────┐".repeat(boardsize.size))
     println("┐")
 
@@ -82,4 +89,12 @@ fun BoardSetUp(boardsize:MutableList<String>) {
     // Build bottom
     print("└────┘".repeat(boardsize.size))
     println("┘")
+
+
+}
+
+fun StartTurnRotation(boardsize: MutableList<String>, playerOne: String, playerTwo: String) {
+    println(playerOne)
+    println(playerTwo)
+
 }
