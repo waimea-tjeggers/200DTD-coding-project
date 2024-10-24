@@ -15,8 +15,8 @@
  * basics
  * Set up board ✔
  * get player names ✔
- * randomise pieces
- * differentiate between normal and gold coins
+ * randomise pieces ✔
+ * differentiate between normal and gold coins ✔
  * set up piece movement
  * turn rotation
  * check for winning
@@ -31,14 +31,9 @@
  * Program entry point
  */
 fun main() {
-    val boardsize = mutableListOf <String> ()
-repeat(times = 15){
-    boardsize.add(" ")
-}
+    val board = mutableListOf <String> ()
 
-
-
-
+    setupGame(board)
     /**
      * getting player names
      */
@@ -50,9 +45,20 @@ repeat(times = 15){
 
 
     showIntro()
-    BoardSetUp(boardsize)
-    StartTurnRotation(boardsize,playerOne,playerTwo)
+    var currentPlayer = playerOne
 
+    // Main game loop
+    while (true) {
+        showBoard(board)
+        playerMove(board, currentPlayer)
+
+        if (currentPlayer == playerOne) {
+            currentPlayer = playerTwo
+        }
+        else {
+            currentPlayer = playerOne
+        }
+    }
 }
 
 
@@ -65,7 +71,6 @@ fun showIntro() {
     println("the rules of this game are pretty simple")
     println("you can only move the coins to the left, once they're at the end of the line you may take it")
     println("the goal of the game is to be the one to take the gold coin")
-    println("you cannot move and remove a coin in the same turn")
     println("you may not move a coin through another coin")
 
 
@@ -73,28 +78,48 @@ fun showIntro() {
 }
 
 
-fun BoardSetUp(boardsize:MutableList<String>) {
+fun setupGame(board: MutableList<String>) {
+    repeat(15){
+        board.add(" ")
+    }
+    repeat(4){
+        board.add("C")
+    }
+    board.add("G")
+
+    board.shuffle()
+}
+
+
+fun showBoard(board:MutableList<String>) {
     /**
      * setting up board
      */
 
-    print("┌────┐".repeat(boardsize.size))
+    print("┌────┐".repeat(board.size))
     println("┐")
 
-    for (board in boardsize) {
-        print("| %-2s |".format(board))
+    for (square in board) {
+        print("| %-2s |".format(square))
     }
     println("|")
 
     // Build bottom
-    print("└────┘".repeat(boardsize.size))
+    print("└────┘".repeat(board.size))
     println("┘")
 
 
 }
 
-fun StartTurnRotation(boardsize: MutableList<String>, playerOne: String, playerTwo: String) {
-    println(playerOne)
-    println(playerTwo)
+fun playerMove(board: MutableList<String>, name: String) {
+
+    println("Your turn $name")
+    println("what coin would you like to move?")
+    var movedFrom = readln()
+    println("and where would you like to move it?")
+    var movedTo = readln()
+
+    
+
 
 }
