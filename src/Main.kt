@@ -18,8 +18,8 @@
  * randomise pieces ✔
  * differentiate between normal and gold coins ✔
  * set up piece movement
- * turn rotation
- * check for winning
+ * turn rotation ✔
+ * check for winning 
  * end game
 
  * extras
