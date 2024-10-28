@@ -119,7 +119,7 @@ fun playerMove(board: MutableList<String>, name: String) {
     println("and where would you like to move it?")
     var movedTo = readln()
 
-    
+
 
 
 }
